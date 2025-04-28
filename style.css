@@ -1,164 +1,233 @@
+styles.css
+
 header {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border: 4px solid #000000;
-  background-color: white; 
-  z-index: 100;
-}
-
-body {
-  margin: 0;
-  padding-top: 150px; 
-}
-
-#timerText {
-  text-align: center;
-  font-size: 100px;
-}
-
-#startText {
-    text-align: center;
-    font-size: 50px;
-    margin: 5px;
-}
-
-.headerText {
-    text-align: center;
-    font-size: 25px;
-    margin: 5px;
-    color: black;
-
-}
-
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .flex-container > div {
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 50px;
-  }
-
-  .flex-container2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .flex-container2 > div {
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 50px;
-  }
-
-  .button-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .button-container > div {
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 50px;
-  }
-
-
-  .timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     width: 100%;
-    max-width: 600px;
+    padding: 10px 20px;
     box-sizing: border-box;
-}
-h1 {
-  font-size: 2em;
-  width: 8ch;
-  margin: 20px auto;
-}
-.button-container {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.button {
-  background-color: #d2d2d2;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #f87070;
-}
-.hidden {
-  display: block;
-}
-.timer-display {
-  font-size: 5em;
-  margin-top: 20px;
-  font-weight: bold;
-  text-align: center; 
+    border: 4px solid #000000;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+#common {
+    color: green;
+    position: fixed;
+    top: 100px;
+    margin-left: 100px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 50pt;
+    font-family: Impact;
 }
 
-#buttons {
-  margin-top: 20px;
-  text-align: center; 
-  width: 100%;
-}
-#start,
-#stop {
-  background-color: #c0c0c0;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
+#epic {
+    color:purple;
+    position: fixed;
+    top: 100px;
+    margin-left: 600px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 50pt;
+    font-family: Impact;
 }
 
-#stop:hover {
-  background-color: tomato;
+#legendary {
+    color: red;
+    position: fixed;
+    top: 100px;
+    margin-left: 1000px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 50pt;
+    font-family: Impact;
 }
-#start:hover {
-  background-color: #219a52;
-}
- #timer-message {
-   color: rgb(0, 0, 0);
-   background-color: tomato;
-   display: none;
-   padding: .5em;
-   font-size: 1em;
-   text-align: center;
-   border-radius: 1em;
-      }
 
+#greenBox {
+    position: fixed;
+    top: 300px;
+    margin-left: 100px;
+    width: 17%;
+    padding: 10px 20px;
+
+}
+
+#purpleBox {
+    position: fixed;
+    top: 300px;
+    margin-left: 550px;
+    width: 17%;
+    padding: 10px 20px;
+}
+
+#redBox {
+    position: fixed;
+    top: 300px;
+    margin-left: 1025px;
+    width: 17%;
+    padding: 10px 20px;
+}
+
+
+#commonButton {
+    position: fixed;
+    top: 600px;
+    margin-left: 135px;
+    width: 15%;
+    height: 10%;
+    font-size: 25pt;
+    font-family: sans-serif;
+    color: white;
+}
+#epicButton {
+    position: fixed;
+    top: 600px;
+    margin-left: 580px;
+    width: 15%;
+    height: 10%;
+    font-size: 25pt;
+    font-family: sans-serif;
+    color: white;
+}
+
+#legendaryButton {
+    position: fixed;
+    top: 600px;
+    margin-left: 1060px;
+    width: 15%;
+    height: 10%;
+    font-size: 25pt;
+    font-family: sans-serif;
+    color: white;
+}
+
+#tooltip{
+    top:600px;
+    margin-left: 135px;
+    position: fixed;
+    cursor: pointer;
+    /*border: 2px dotted;*/
+    padding: 21px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#hoverText{
+    opacity: 0;
+}
+#tooltipText{
+    position: absolute;
+    Left: 50%;
+    top: 0;
+    transform: transLateX(-50%);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#tooltipText::before{
+    content: "";
+    position: absolute;
+    Left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+
+}
+#tooltip:hover #tooltipText{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#tooltip2{
+    top:600px;
+    margin-left: 580px;
+    position: fixed;
+    cursor: pointer;
+    padding: 21px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#hoverText2{
+    opacity: 0;
+}
+#tooltipText2{
+    position: absolute;
+    Left: 50%;
+    top: 0;
+    transform: transLateX(-50%);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#tooltipText2::before{
+    content: "";
+    position: absolute;
+    Left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+
+}
+#tooltip2:hover #tooltipText2{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+#tooltip3{
+    top:600px;
+    margin-left: 1060px;
+    position: fixed;
+    cursor: pointer;
+    padding: 21px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#hoverText3{
+    opacity: 0;
+}
+#tooltipText3{
+    position: absolute;
+    Left: 50%;
+    top: 0;
+    transform: transLateX(-50%);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+#tooltipText3::before{
+    content: "";
+    position: absolute;
+    Left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+
+}
+#tooltip3:hover #tooltipText3{
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
