@@ -117,12 +117,12 @@ body {
 }
 
 #tooltip{
-  top:600px;
-  margin-left: 135px;
+  top:400px;
+  margin-left: 120px;
   position: fixed;
   cursor: pointer;
   /*border: 2px dotted;*/
-  padding: 21px;
+  padding: 35px;
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
@@ -162,11 +162,12 @@ body {
 
 
 #tooltip2{
-  top:600px;
-  margin-left: 580px;
+  top:400px;
+  margin-left: 570px;
   position: fixed;
   cursor: pointer;
-  padding: 21px;
+  /*border: 2px dotted;*/
+  padding: 35px;
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
@@ -205,11 +206,12 @@ body {
 }
 
 #tooltip3{
-  top:600px;
-  margin-left: 1060px;
+  top:400px;
+  margin-left: 1045px;
   position: fixed;
   cursor: pointer;
-  padding: 21px;
+  /*border: 2px dotted;*/
+  padding: 35px;
   font-size: 25px;
   font-weight: bold;
   font-family: sans-serif;
@@ -381,5 +383,48 @@ h1 {
    font-size: 1em;
    text-align: center;
    border-radius: 1em;
-      }
+  }
+
+
+#rewardImage {
+  width: 200px;
+  height:200px;
+  display: none;
+  margin: 20px auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#rewardImage.animate {
+  animation: spinAndFade 1s forwards;
+}
+
+@keyframes spinAndFade {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate {
+  animation: rotateAnimation 1s ease-in-out;
+}
+
+@keyframes rotateAnimation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 
