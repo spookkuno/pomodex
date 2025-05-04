@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pomodex</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <div class="flex-container2">
+        <div>
+            <h1 id="timerText"> Pomodex </h1>
+        </div>
+        
+        <div>
+            <a href="timerScreen.html" id="startText">
+            start
+            </a>
+        </div>
+        
+        <div>
+            <a href="#" id="startText" onclick="resetProgress(); return false;">
+            reset progress
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function resetProgress() {
+            if (confirm('Are you sure you want to reset your progress? This will set your coins back to 0.')) {
+                localStorage.setItem('pomodexCoins', 0);
+                alert('Progress reset!');
+            }
+        }
+    </script>
+</html>

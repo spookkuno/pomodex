@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodex</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <div class="flex-container">
+            <div><h2 id="coinDisplay" class="headerText">Coins: 0</h2></div>
+            <div><h1 id="startText">Pomodex</h1></div>
+            <div><a href="timerScreen.html" class="headerText">Home</a></div>
+        </div>
+    </header>
+
+
+    <div>
+        <p id="common">Common</p>
+        <p id="epic">Epic</p>
+        <p id="legendary">Legendary</p>
+    </div>
+
+
+    <div>
+        <img id="greenBox" src="CommonBox.png" alt="Common Box">
+        <img id="purpleBox" src="PurpleBox.png" alt="Epic Box">
+        <img id="redBox" src="RedBox.png" alt="Legendary Box">
+    </div>
+
+
+    <div>
+        <button onclick="doSomething('common')" style="background-color: green; border-radius: 5px" id="commonButton">10 coins 🪙</button>
+        <button onclick="doSomething('epic')" style="background-color: purple; border-radius: 5px" id="epicButton">20 coins 🪙</button>
+        <button onclick="doSomething('legendary')" style="background-color: red; border-radius: 5px" id="legendaryButton">50 coins 🪙</button>
+    </div>
+
+
+    <div id="tooltip">
+        <span id="tooltipText">Common: 65%, Epic: 30%, Legendary: 5%</span>
+        <span id="hoverText">hover over me</span>
+    </div>
+
+    <div id="tooltip2">
+        <span id="tooltipText2">Common: 30%, Epic: 60%, Legendary: 10%</span>
+        <span id="hoverText2">hover over me</span>
+    </div>
+
+    <div id="tooltip3">
+        <span id="tooltipText3">Common: 10%, Epic: 50%, Legendary: 40%</span>
+        <span id="hoverText3">hover over me</span>
+    </div>
+
+    <div>
+        <img id = "rewardImage" src = "" alt = "Your Reward" style = "display:none; width: 200px; height: 200px; margin-top: 20px;">
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>
